@@ -131,7 +131,6 @@ resete.addEventListener('click', () => {
 const removeAllCompletedTasks = () => {
   const completedTasks = Taskarray.filter((task) => task.checked !== true);
   Taskarray = completedTasks;
-  console.log('click', Taskarray);
   addListToLocalStorage();
   createTask();
 };
